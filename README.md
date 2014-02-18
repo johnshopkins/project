@@ -1,31 +1,32 @@
 project
 =======
 
-A very basic project template. Clone into whatever you want to call your new project.
+A very basic project template. Requirements: node, npm, php 5.4+
 
-A few things to keep in mind:
-
-* Make sure you have php 5.4  
-    ```bash
-    $ php -v
+* Clone into whatever you want to call your new project, e.g. "banana-bot"  
     ```
-* Install gulp globally 
-    ```bash
-    $ which gulp
-    $ npm install -g gulp
+    $ git clone git@github.com:johnshopkins/project.git banana-bot
+    ```
+* cd into your new project directory  
+    ```
+    $ cd banana-bot
+    ```
+* Install gulp globally, if you don't already have it
+    ```
+    $ which gulp || npm install -g gulp
     ```
 * Install node packages  
-    ```bash
+    ```
     $ npm install
     ```
-* Start web server  
-    ```bash
-    $ php -S localhost:{port} -t public/
+* Start web server on your favorite port, e.g. 4000
+    ```
+    $ php -S localhost:4000 -t public/
     ```
 * In a new terminal tab, run the gulp watch command  
-    ```bash
+    ```
     $ gulp watch
     ```
+* Open to http://localhost:4000 in your favorite browser
 
-
-Scoop up all of the money and awards and medals for your great success.
+* Scoop up the mountains of money and awards and medals bestowed upon your head on account of your new and great success.
