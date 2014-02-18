@@ -1,0 +1,6 @@
+{
+  "undef": true,
+  "unused": "vars",
+  "devel": true,
+  "browser": true
+}
