@@ -18,6 +18,8 @@ body
 .catainer, .clip-one, .clip-two
 	width: 433.013px //86.6026% of original width of image
 	height: 500px //original height of image
+	// border: blue 10px solid
+
 
 .clip-one, .clip-two
 	position: absolute
@@ -30,6 +32,9 @@ body
 	overflow: hidden
 	margin: -59.9845px 5px //(29.9938% / 2) of original width of image, 1% of original width of image
 	padding: 0
+	transition: all 250ms ease-in-out
+	&.active
+		-webkit-transform: scale(.9)
 
 	.clip-one
 		-webkit-transform: rotate(60deg)		
