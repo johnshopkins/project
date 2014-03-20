@@ -7,3 +7,44 @@
 
 // Partials (actual CSS)
 @import "partials/layout"
+
+body
+	text-align: center
+
+.beehive
+	position: relative
+	margin: 200px
+
+.catainer, .clip-one, .clip-two
+	width: 433.013px //86.6026% of original width of image
+	height: 500px //original height of image
+
+.clip-one, .clip-two
+	position: absolute
+	clip: rect(0, 433.013px, 500px, 0)
+
+
+.catainer
+	position: relative
+	display: inline-block
+	overflow: hidden
+	margin: -59.9845px 5px //(29.9938% / 2) of original width of image, 1% of original width of image
+	padding: 0
+
+	.clip-one
+		-webkit-transform: rotate(60deg)		
+
+	.clip-two
+		-webkit-transform: rotate(60deg)
+
+	.kitton
+		position: absolute
+		top: 50%
+		margin-top: -250px //50% of height of image
+		left: 50%
+		margin-left: -250px //50% of width of image
+		-webkit-transform: rotate(-120deg)
+
+
+
+

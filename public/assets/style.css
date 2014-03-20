@@ -1334,3 +1334,36 @@
   width: 95%;
   max-width: 1000px;
   margin: 0 auto; }
+
+body {
+  text-align: center; }
+
+.beehive {
+  position: relative;
+  margin: 200px; }
+
+.catainer, .clip-one, .clip-two {
+  width: 433.013px;
+  height: 500px; }
+
+.clip-one, .clip-two {
+  position: absolute;
+  clip: rect(0, 433.013px, 500px, 0); }
+
+.catainer {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: -59.9845px 5px;
+  padding: 0; }
+  .catainer .clip-one {
+    -webkit-transform: rotate(60deg); }
+  .catainer .clip-two {
+    -webkit-transform: rotate(60deg); }
+  .catainer .kitton {
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -250px;
+    -webkit-transform: rotate(-120deg); }
