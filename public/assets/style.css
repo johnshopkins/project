@@ -1348,7 +1348,7 @@ body {
 
 .clip-one, .clip-two {
   position: absolute;
-  clip: rect(0, 433.013px, 500px, 0); }
+  overflow: hidden; }
 
 .catainer {
   position: relative;
