@@ -6,6 +6,9 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><%= page.title || "Untitled Prototype" %></title>
 	<link rel="stylesheet" href="/assets/style.css" />
+	<% if (page.customCss) { %>
+	<link rel="stylesheet" href="/assets/<%= page.customCss %>" />
+	<% } %>
 	<!-- <script src="/assets/js/vendor/modernizr.js"></script> -->
 </head>
 <body>
