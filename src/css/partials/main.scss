@@ -1,0 +1,14 @@
+/**
+ * partials/main.scss
+ *
+ * Imports all other partial files
+ *
+ * Note: no sass/css should be written directly
+ * in this file, only imports.
+ *
+ */
+
+@import "defaults";
+@import "grid";
+@import "layout";
+@import "normalize";

@@ -1,0 +1,18 @@
+@import "variables";
+
+// @include webfont(myfont, MyFont-Bold, 800, bold);
+@mixin webfont($family, $file, $weight: 400, $style: normal) {
+
+  $dir: '#{$fonts_dir}/#{$family}';
+
+  @font-face {
+    font-family: $family;
+    src: url('#{$dir}/#{$file}.eot');
+    src: url('#{$dir}/#{$file}.eot?#iefix') format('embedded-opentype'),
+         url('#{$dir}/#{$file}.woff') format('woff'),
+         url('#{$dir}/#{$file}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: unquote($style);
+  }
+
+}

@@ -1,0 +1,153 @@
+$maxwidth: 1440;
+$gutterwidth: 36;
+$columns: 12;
+
+$guttercount: $columns - 1;
+$gutterspace: $gutterwidth * $guttercount;
+$columnspace: $maxwidth - $gutterspace;
+$columnmax: $columnspace / $columns;
+
+$column: percentage($columnmax / $maxwidth);
+$gutter: percentage($gutterwidth / $maxwidth);
+
+
+/**
+ * Mutliply a value by a number of columns and
+ * a corresponding number of gutters to get a
+ * default "span" width value
+ *
+ * @param  {[type]} $n [description]
+ * @return {[type]}    [description]
+ */
+@function default_span($n, $g: false) {
+  @if ($g) { }
+  @else {
+    $g: $n - 1;
+  }
+  @return ($column * $n) + ($gutter * $g);
+}
+
+/**
+ * Find the value of a target context by
+ * relationship to its outer context
+ *
+ * @param  {[type]} $ratio [description]
+ * @return {[type]}        [description]
+ */
+@function nested_value($target, $context) {
+  @return $target / $context;
+}
+
+/**
+ * Return a calculated span width based on a
+ * target/context ratio
+ *
+ * @param  {[type]} $ratio                    [description]
+ * @param  {[type]} $include_trailing_gutter: false         [description]
+ * @return {[type]}                           [description]
+ */
+@function get_span_width($ratio, $extra_gutters: 0) {
+
+  // Accepts $ratio as 2 of 10
+  // first = target, last = context
+  $target: nth($ratio, 1);
+  $context: nth($ratio, -1);
+
+  // Get the default span based on each number of columns
+  $target_span: default_span($target);
+  $context_span: default_span($context);
+
+  // Calculate the nested span using the two values
+  $span: nested_value($target_span, $context_span);
+
+  // Add nested gutter values as requested, 0 by default
+  // then return % version of sum of span + extra gutters
+  $extra: nth($extra_gutters, 1);
+  @return percentage($span) + (get_gutter_width($ratio) * $extra);
+
+}
+
+@function get_gutter_width($ratio) {
+  $context: nth($ratio, -1);
+  @return percentage($gutter / default_span($context));
+}
+
+
+
+@mixin span($ratio, $last: false) {
+
+  width: get_span_width($ratio);
+  min-height: 1px;
+
+  @if ($last) {
+    margin-right: 0;
+  }
+
+  @else if (nth($ratio, 1) < $columns) {
+    margin-right: get_gutter_width($ratio);
+  }
+
+  @else {
+    -test-nomargin: "true";
+    -test-ratio: $ratio;
+    -test-nth: nth($ratio, -1);
+    -test-columns: $columns;
+  }
+
+}
+
+
+@mixin pad_ratio($ratio, $direction, $multiplier: 1) {
+  @include pad($direction, $multiplier, get_gutter_width($ratio));
+}
+
+@mixin pad($direction, $multiplier: 1, $g: $gutter) {
+  @if (index($direction, top)) {
+    padding-top: $g * $multiplier;
+  }
+
+  @if (index($direction, right)) {
+    padding-right: $g * $multiplier;
+  }
+
+  @if (index($direction, bottom)) {
+    padding-bottom: $g * $multiplier;
+  }
+
+  @if (index($direction, left)) {
+    padding-left: $g * $multiplier;
+  }
+
+  @if (index($direction, all)) {
+    padding: $g * $multiplier;
+  }
+}
+
+////////////////////////
+
+
+@mixin space_ratio($ratio, $direction, $multiplier: 1) {
+  @include space($direction, $multiplier, get_gutter_width($ratio));
+}
+
+@mixin space($direction, $multiplier: 1, $g: $gutter) {
+  @if (index($direction, top)) {
+    margin-top: $g * $multiplier;
+  }
+
+  @if (index($direction, right)) {
+    margin-right: $g * $multiplier;
+  }
+
+  @if (index($direction, bottom)) {
+    margin-bottom: $g * $multiplier;
+  }
+
+  @if (index($direction, left)) {
+    margin-left: $g * $multiplier;
+  }
+
+  @if (index($direction, all)) {
+    margin: $g * $multiplier;
+  }
+}

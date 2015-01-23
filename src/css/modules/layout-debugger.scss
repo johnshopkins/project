@@ -1,0 +1,71 @@
+@import "utils/main";
+
+// Colors to show breakpoint changes, dev only
+$color_hand: $new_custard;
+$color_lap: $tangerine;
+$color_desk: $cty_green;
+$color_wall: $spearmint;
+$color_jumbotron: $tricias_pants;
+
+.column-master-super-awesome-grid {
+  @include pad_ratio(of 12, top, 1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $stack_super_top;
+  display: none;
+
+  .row {
+    @include pad_ratio(of 12, top, 0.25);
+
+    &:first-child { @include pad_ratio(of 12, top, 0); }
+
+    .column {
+      @include pad_ratio(of 12, top bottom, 0.125);
+      text-align: center;
+      color: $white;
+      border-top: solid 0.5em;
+
+      &.twelve { @include span(12 of 12); border-top-color: $cty_green; }
+      &.eleven { @include span(11 of 12); border-top-color: $cty_green; }
+      &.ten { @include span(10 of 12); border-top-color: $cty_green; }
+      &.nine { @include span(9 of 12); border-top-color: $cty_green; }
+      &.eight { @include span(8 of 12); border-top-color: $cty_green; }
+      &.seven { @include span(7 of 12); border-top-color: $cty_green; }
+      &.six { @include span(6 of 12); border-top-color: $spearmint; }
+      &.five { @include span(5 of 12); border-top-color: $cty_green; }
+      &.four { @include span(4 of 12); border-top-color: $oak_leaves; }
+      &.three { @include span(3 of 12); border-top-color: $bright_turquoise; }
+      &.two { @include span(2 of 12); border-top-color: $new_copper_petina; }
+      &.one { @include span(1 of 12); border-top-color: $magnolia_leaves;}
+
+      &:last-child { margin-right: 0; }
+    }
+  }
+}
+
+.breakpoint-checker {
+  padding: ($standard_spacing / 6);
+  padding-left: 3em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: $stack_super_top;
+  background-color: $color_hand;
+  color: $white;
+  display: none;
+
+  &::before { content: "hand"; }
+
+  @include breakpoint_lap() { background-color: $color_lap; &::before { content: "lap"; } }
+  @include breakpoint_desk() { background-color: $color_desk; &::before { content: "desk"; } }
+  @include breakpoint_wall() { background-color: $color_wall; &::before { content: "wall"; } }
+  @include breakpoint_jumbotron() { background-color: $color_jumbotron; &::before { content: "jumbotron"; } }
+}
+
+body.debug-breakpoints {
+
+  .column-master-super-awesome-grid,
+  .breakpoint-checker { display: block; }
+}

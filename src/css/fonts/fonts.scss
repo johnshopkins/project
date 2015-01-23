@@ -1,0 +1,12 @@
+@import "variables";
+@import "mixins";
+
+@import "font-awesome/font-awesome";
+
+@each $family, $font in $font_list {
+  @each $weight, $style, $file in $font {
+
+    @include webfont($family, $file, $weight, $style);
+
+  }
+}

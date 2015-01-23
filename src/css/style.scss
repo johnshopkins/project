@@ -1,0 +1,21 @@
+// Vendor sass, ie bourbon, compass, anything 3rd party
+@import "vendor/bourbon/bourbon";
+@import "fonts/fonts";
+
+// Custom utils (variables, mixins)
+@import "utils/main";
+
+// Partials (actual CSS)
+@import "partials/main";
+
+// Modules (actual CSS)
+@import "modules/main";
+
+
+body {
+  background-color: $copper_roof; 
+}
+
+img { 
+	width: 200px;
+}

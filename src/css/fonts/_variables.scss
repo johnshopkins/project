@@ -1,0 +1,67 @@
+// This MUST be EITHER:
+//   - absolute from the web root
+//     e.g.
+//          http://example.com/assets/fonts/MyFont.ttf
+//          => /assets/fonts
+//
+//   - relative to the compiled .css files (if always the same depth)
+//     e.g.
+//          http://example.com/assets/fonts/MyFont.ttf
+//          AND http://example.com/assets/css/style.css
+//          => ../fonts
+//
+$fonts_dir: "fonts";
+
+$font_list: (
+  gentona: (
+    (100 'normal' "Gentona-Thin")
+    (100 'italic' "Gentona-ThinItalic")
+    (200 'normal' "Gentona-ExtraLight")
+    (200 'italic' "Gentona-ExtraLightItalic")
+    (300 'normal' "Gentona-Light")
+    (300 'italic' "Gentona-LightItalic")
+    (400 'normal' "Gentona-Book")
+    (400 'italic' "Gentona-BookItalic")
+    (500 'normal' "Gentona-Medium")
+    (500 'italic' "Gentona-MediumItalic")
+    (600 'normal' "Gentona-SemiBold")
+    (600 'italic' "Gentona-SemiBoldItalic")
+    (700 'normal' "Gentona-Bold")
+    (700 'italic' "Gentona-BoldItalic")
+    (800 'normal' "Gentona-ExtraBold")
+    (800 'italic' "Gentona-ExtraBoldItalic")
+    (900 'normal' "Gentona-Heavy")
+    (900 'italic' "Gentona-HeavyItalic")
+  ),
+  quadon: (
+    (100 'normal' "Quadon-Thin")
+    (100 'italic' "Quadon-ThinItalic")
+    (200 'normal' "Quadon-Light")
+    (200 'italic' "Quadon-LightItalic")
+    (300 'normal' "Quadon-Regular")
+    (300 'italic' "Quadon-RegularItalic")
+    (400 'normal' "Quadon-Medium")
+    (400 'italic' "Quadon-MediumItalic")
+    (500 'normal' "Quadon-Bold")
+    (500 'italic' "Quadon-BoldItalic")
+    (600 'normal' "Quadon-UltraBold")
+    (600 'italic' "Quadon-UltraBoldItalic")
+    (700 'normal' "Quadon-ExtraBold")
+    (700 'italic' "Quadon-ExtraBoldItalic")
+    (800 'normal' "Quadon-Black")
+    (800 'italic' "Quadon-BlackItalic")
+    (900 'normal' "Quadon-Heavy")
+    (900 'italic' "Quadon-HeavyItalic")
+  ),
+  titling-gothic: (
+    (300 'normal' "Titling-Gothic-Regular")
+    (500 'normal' "Titling-Gothic-Medium")
+    (700 'normal' "Titling-Gothic-Bold")
+  ),
+  arnhem: (
+    (300 'normal' "Arnhem-Blond")
+    (300 'italic' "Arnhem-BlondItalic")
+    (700 'normal' "Arnhem-Bold")
+    (700 'italic' "Arnhem-BoldItalic")
+  )
+);

@@ -18,8 +18,8 @@ var paths = {
     build: ["./src/js/main.js"]
   },
   styles: {
-    all: ["./src/sass/**/*.sass", "./src/sass/**/*.scss", "./src/sass/**/*.css"],
-    build: ["./src/sass/*.sass", "./src/sass/*.scss", "./src/sass/*.css"]
+    all: ["./src/css/**/*.sass", "./src/css/**/*.scss", "./src/css/**/*.css"],
+    build: ["./src/css/*.sass", "./src/css/*.scss", "./src/css/*.css"]
   },
   pages: ["./src/pages/**/*"],
   statics: ["./src/static/**/*"],
