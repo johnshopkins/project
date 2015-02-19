@@ -11,11 +11,48 @@
 body
 	text-align: center
 
+.svg-hex
+	-webkit-transform: scale(1)
+	transition: all 500ms ease-in-out
+	&:hover
+		-webkit-transform: scale(2)
+
+.svg-hex-clip
+	-webkit-clip-path: polygon(0px 375px, 0px 125px, 216.5px 0px, 433px 125px, 433px 375px, 216.5px 500px) //CrAzY black boxes when animating scale
+	-webkit-transform: scale(1)
+	transition: all 500ms ease-in-out
+	background: red
+	display: inline-block
+	overflow: hidden
+	.svg-cat
+		transition: all 500ms ease-in-out
+		background: #CF4520
+
+	&.active
+		-webkit-transform: scale(2)
+		.svg-cat
+			// -webkit-transform: scale(.8)
+
+.svg-hex-mask
+	// mask: url(#hexagon)
+	-webkit-mask: url(img/hexagon.svg) top center no-repeat
+	-webkit-transform: scale(1)
+	transition: all 500ms ease-in-out
+	background: #86C8BC
+	overflow: hidden
+	.svg-cat
+		transition: all 500ms ease-in-out
+	&.active
+		-webkit-transform: scale(2)
+		.svg-cat
+			-webkit-transform: scale(.8)
+
 .beehive
 	position: relative
 	margin: 200px
 
 .catainer, .clip-one, .clip-two
+	//ratios for hexagons are (height is 115.469974% of width / width is 86.6026% of height)
 	width: 433.013px //86.6026% of original width of image
 	height: 500px //original height of image
 	// border: blue 10px solid
