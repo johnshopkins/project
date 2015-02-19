@@ -14,36 +14,43 @@ body
 .svg-hex
 	-webkit-transform: scale(1)
 	transition: all 500ms ease-in-out
+
 	&:hover
 		-webkit-transform: scale(2)
 
 .svg-hex-clip
-	-webkit-clip-path: polygon(0px 375px, 0px 125px, 216.5px 0px, 433px 125px, 433px 375px, 216.5px 500px) //CrAzY black boxes when animating scale
+	-webkit-clip-path: polygon(0px 375px, 0px 125px, 216.5px 0px, 433px 125px, 433px 375px, 216.5px 500px)
 	-webkit-transform: scale(1)
 	transition: all 500ms ease-in-out
 	background: red
 	display: inline-block
 	overflow: hidden
+
 	.svg-cat
 		transition: all 500ms ease-in-out
 		background: #CF4520
+		backface-visibility: hidden
 
 	&.active
 		-webkit-transform: scale(2)
+
 		.svg-cat
 			// -webkit-transform: scale(.8)
 
 .svg-hex-mask
 	// mask: url(#hexagon)
-	-webkit-mask: url(img/hexagon.svg) top center no-repeat
+	-webkit-mask: url(images/hexagon.svg) top center no-repeat
 	-webkit-transform: scale(1)
 	transition: all 500ms ease-in-out
 	background: #86C8BC
 	overflow: hidden
+
 	.svg-cat
 		transition: all 500ms ease-in-out
+
 	&.active
 		-webkit-transform: scale(2)
+
 		.svg-cat
 			-webkit-transform: scale(.8)
 
@@ -74,7 +81,7 @@ body
 		-webkit-transform: scale(.9)
 
 	.clip-one
-		-webkit-transform: rotate(60deg)		
+		-webkit-transform: rotate(60deg)
 
 	.clip-two
 		-webkit-transform: rotate(60deg)
@@ -86,7 +93,3 @@ body
 		left: 50%
 		margin-left: -250px //50% of width of image
 		-webkit-transform: rotate(-120deg)
-
-
-
-

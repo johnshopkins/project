@@ -1343,12 +1343,13 @@ body {
   overflow: hidden; }
   .svg-hex-clip .svg-cat {
     transition: all 500ms ease-in-out;
-    background: #CF4520; }
+    background: #CF4520;
+    backface-visibility: hidden; }
   .svg-hex-clip.active {
     -webkit-transform: scale(2); }
 
 .svg-hex-mask {
-  -webkit-mask: url(img/hexagon.svg) top center no-repeat;
+  -webkit-mask: url(images/hexagon.svg) top center no-repeat;
   -webkit-transform: scale(1);
   transition: all 500ms ease-in-out;
   background: #86C8BC;
