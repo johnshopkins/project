@@ -8,7 +8,9 @@
     "gulp": "~3.5.2",
     "gulp-jshint": "~1.4.2",
     "gulp-browserify": "~0.4.5",
-    "node-underscorify": "0.0.3"
+    "node-underscorify": "0.0.3",
+    "gulp-pagemaki": "jasonrhodes/gulp-pagemaki",
+    "gulp-rimraf": "0.0.9"
   },
   "dependencies": {
     "underscore": "~1.6.0"
