@@ -14,6 +14,9 @@
 <body>
 	<%= page.content %>
 	<script src="/assets/main.js"></script>
+	<% if (page.customJs) { %>
+	<script src="/assets/<%= page.customCss %>"></script>
+	<% } %>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--
     <script>
