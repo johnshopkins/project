@@ -18,8 +18,8 @@ var paths = {
     build: ["./src/js/main.js"]
   },
   styles: {
-    all: ["./src/sass/**/*.sass", "./src/sass/**/*.scss", "./src/sass/**/*.css"],
-    build: ["./src/sass/*.sass", "./src/sass/*.scss", "./src/sass/*.css"]
+    all: ["./src/css/**/*.sass", "./src/css/**/*.scss", "./src/css/**/*.css"],
+    build: ["./src/css/*.sass", "./src/css/*.scss", "./src/css/*.css"]
   },
   pages: ["./src/pages/**/*"],
   statics: ["./src/static/**/*"],
@@ -44,7 +44,7 @@ function cleanUp(glob) {
 /** ========================================================================
  *
  * TASK DEFINITIONS
- * 
+ *
  */
 
 gulp.task("default", ["scripts", "styles", "pages", "statics"]);
@@ -91,7 +91,7 @@ gulp.task("cleanStatic", function () {
 
 
 gulp.task("scripts", ["jshint", "cleanScripts"], function () {
-  
+
   return gulp.src(paths.scripts.build)
     .pipe(browserify({
       debug: !gutil.env.production,
@@ -145,5 +145,5 @@ gulp.task("watch", ["default"], function () {
   gulp.watch(paths.styles.all, ["styles"]);
   gulp.watch(paths.pages, ["pages"]);
   gulp.watch(paths.statics, ["static"]);
-  
+
 });
