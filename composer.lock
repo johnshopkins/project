@@ -1,0 +1,144 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "797dbd9909e97565f6af4434a98d70a5",
+    "content-hash": "5ad16c40f6422eb026f32ebf7bd6de7b",
+    "packages": [
+        {
+            "name": "johnshopkins/css-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnshopkins/css-installer.git",
+                "reference": "17e8117dfab92607eac50d01edae9f0c5048a7c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnshopkins/css-installer/zipball/17e8117dfab92607eac50d01edae9f0c5048a7c5",
+                "reference": "17e8117dfab92607eac50d01edae9f0c5048a7c5",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "CssInstaller\\Composer\\CssInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "CssInstaller\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "description": "Composer custom installer for CSS libraries.",
+            "support": {
+                "source": "https://github.com/johnshopkins/css-installer/tree/master",
+                "issues": "https://github.com/johnshopkins/css-installer/issues"
+            },
+            "time": "2016-02-01 17:02:47"
+        },
+        {
+            "name": "johnshopkins/font-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnshopkins/font-installer.git",
+                "reference": "1c877bac918aecfb8d30a8bc6f94f2e0aad2af44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnshopkins/font-installer/zipball/1c877bac918aecfb8d30a8bc6f94f2e0aad2af44",
+                "reference": "1c877bac918aecfb8d30a8bc6f94f2e0aad2af44",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "FontInstaller\\Composer\\FontInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "FontInstaller\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "description": "Composer custom installer for fonts.",
+            "support": {
+                "source": "https://github.com/johnshopkins/font-installer/tree/master",
+                "issues": "https://github.com/johnshopkins/font-installer/issues"
+            },
+            "time": "2016-02-02 15:26:12"
+        },
+        {
+            "name": "johnshopkins/shared-fonts",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:johnshopkins/shared-fonts.git",
+                "reference": "4412939ef1731cb59f2dbf7aa892a6207f729118"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnshopkins/shared-fonts/zipball/4412939ef1731cb59f2dbf7aa892a6207f729118",
+                "reference": "4412939ef1731cb59f2dbf7aa892a6207f729118",
+                "shasum": ""
+            },
+            "require": {
+                "johnshopkins/font-installer": "dev-master"
+            },
+            "type": "font-lib",
+            "description": "Fonts that are shared across our projects.",
+            "support": {
+                "source": "https://github.com/johnshopkins/shared-fonts/tree/master",
+                "issues": "https://github.com/johnshopkins/shared-fonts/issues"
+            },
+            "time": "2016-01-13 13:30:17"
+        },
+        {
+            "name": "johnshopkins/shared-scss",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnshopkins/shared-scss.git",
+                "reference": "397d154cc6bf51b104a8f5b55642c2884fff2fb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnshopkins/shared-scss/zipball/397d154cc6bf51b104a8f5b55642c2884fff2fb2",
+                "reference": "397d154cc6bf51b104a8f5b55642c2884fff2fb2",
+                "shasum": ""
+            },
+            "require": {
+                "johnshopkins/css-installer": "dev-master"
+            },
+            "type": "css-lib",
+            "description": "SCSS that is shared across our projects.",
+            "support": {
+                "source": "https://github.com/johnshopkins/shared-scss/tree/master",
+                "issues": "https://github.com/johnshopkins/shared-scss/issues"
+            },
+            "time": "2016-02-15 18:35:27"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "johnshopkins/shared-scss": 20,
+        "johnshopkins/shared-fonts": 20,
+        "johnshopkins/css-installer": 20,
+        "johnshopkins/font-installer": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
