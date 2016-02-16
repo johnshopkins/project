@@ -22,7 +22,7 @@ var paths = {
     build: ["./src/assets/css/*.sass", "./src/assets/css/*.scss", "./src/assets/css/*.css"]
   },
   pages: ["./src/pages/**/*"],
-  statics: ["./src/static/**/*", "./src/assets/fonts/**/*"],
+  statics: ["./src/static/**/*", "./src/assets/fonts/lib/**/*"],
   clean: {
     pages: ["./public/**/*", "!./public/assets", "!./public/assets/**/*"],
     statics: ["./public/assets/**/*", "!./public/assets/*.css", "!./public/assets/*.js"],
