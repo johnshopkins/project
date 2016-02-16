@@ -1,13 +1,13 @@
- var gulp = require("gulp")
-  , gutil = require("gulp-util")
-  , browserify = require("gulp-browserify")
-  , sass = require("gulp-ruby-sass")
-  , jshint = require("gulp-jshint")
-  , stylish = require('jshint-stylish')
-  , notify = require("gulp-notify")
-  , path = require("path")
-  , rimraf = require("gulp-rimraf")
-  , maki = require("gulp-pagemaki")
+ var gulp = require("gulp");
+ var gutil = require("gulp-util");
+ var browserify = require("gulp-browserify");
+ var sass = require("gulp-ruby-sass");
+ var jshint = require("gulp-jshint");
+ var stylish = require('jshint-stylish');
+ var notify = require("gulp-notify");
+ var path = require("path");
+ var rimraf = require("gulp-rimraf");
+ var maki = require("gulp-pagemaki");
 
 // globs and build directories
 var paths = {
