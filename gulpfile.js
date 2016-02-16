@@ -12,17 +12,17 @@
 // globs and build directories
 var paths = {
   scripts: {
-    all: "./src/**/*.js",
-    lint: ["./src/js/**/*.js", "!./src/js/vendor/**/*.js"],
-    watch: ["./src/js/**/*.js", "./src/js/app/templates/**/*.html", "!./src/js/vendor/**/*.js"],
-    build: ["./src/js/main.js"]
+    all: "./src/assets/**/*.js",
+    lint: ["./src/assets/js/**/*.js", "!./src/assets/js/vendor/**/*.js"],
+    watch: ["./src/assets/js/**/*.js", "./src/assets/js/app/templates/**/*.html", "!./src/assets/js/vendor/**/*.js"],
+    build: ["./src/assets/js/main.js"]
   },
   styles: {
     all: ["./src/assets/css/**/*.sass", "./src/assets/css/**/*.scss", "./src/assets/css/**/*.css"],
     build: ["./src/assets/css/*.sass", "./src/assets/css/*.scss", "./src/assets/css/*.css"]
   },
   pages: ["./src/pages/**/*"],
-  statics: ["./src/static/**/*"],
+  statics: ["./src/static/**/*", "./src/assets/fonts/**/*"],
   clean: {
     pages: ["./public/**/*", "!./public/assets", "!./public/assets/**/*"],
     statics: ["./public/assets/**/*", "!./public/assets/*.css", "!./public/assets/*.js"],
