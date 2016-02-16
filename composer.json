@@ -1,0 +1,35 @@
+{
+  "name": "johnshopkins/super-project",
+  "description": "JHU project template",
+  "require": {
+    "johnshopkins/shared-scss": "dev-master",
+    "johnshopkins/shared-fonts": "dev-master",
+    "johnshopkins/css-installer": "dev-master",
+    "johnshopkins/font-installer": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/johnshopkins/shared-scss"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:johnshopkins/css-installer.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:johnshopkins/shared-fonts.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:johnshopkins/font-installer.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "super-project\\": [
+        "src/"
+      ]
+    }
+  }
+}
