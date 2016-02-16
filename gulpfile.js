@@ -12,17 +12,17 @@
 // globs and build directories
 var paths = {
   scripts: {
-    all: "./src/**/*.js",
-    lint: ["./src/js/**/*.js", "!./src/js/vendor/**/*.js"],
-    watch: ["./src/js/**/*.js", "./src/js/app/templates/**/*.html", "!./src/js/vendor/**/*.js"],
-    build: ["./src/js/main.js"]
+    all: "./src/assets/**/*.js",
+    lint: ["./src/assets/js/**/*.js", "!./src/assets/js/vendor/**/*.js"],
+    watch: ["./src/assets/js/**/*.js", "./src/assets/js/app/templates/**/*.html", "!./src/assets/js/vendor/**/*.js"],
+    build: ["./src/assets/js/main.js"]
   },
   styles: {
-    all: ["./src/sass/**/*.sass", "./src/sass/**/*.scss", "./src/sass/**/*.css"],
-    build: ["./src/sass/*.sass", "./src/sass/*.scss", "./src/sass/*.css"]
+    all: ["./src/assets/css/**/*.sass", "./src/assets/css/**/*.scss", "./src/assets/css/**/*.css"],
+    build: ["./src/assets/css/*.sass", "./src/assets/css/*.scss", "./src/assets/css/*.css"]
   },
   pages: ["./src/pages/**/*"],
-  statics: ["./src/static/**/*"],
+  statics: ["./src/static/**/*", "./src/assets/fonts/lib/**/*"],
   clean: {
     pages: ["./public/**/*", "!./public/assets", "!./public/assets/**/*"],
     statics: ["./public/assets/**/*", "!./public/assets/*.css", "!./public/assets/*.js"],
@@ -44,7 +44,7 @@ function cleanUp(glob) {
 /** ========================================================================
  *
  * TASK DEFINITIONS
- * 
+ *
  */
 
 gulp.task("default", ["scripts", "styles", "pages", "statics"]);
@@ -91,7 +91,7 @@ gulp.task("cleanStatic", function () {
 
 
 gulp.task("scripts", ["jshint", "cleanScripts"], function () {
-  
+
   return gulp.src(paths.scripts.build)
     .pipe(browserify({
       debug: !gutil.env.production,
@@ -145,5 +145,5 @@ gulp.task("watch", ["default"], function () {
   gulp.watch(paths.styles.all, ["styles"]);
   gulp.watch(paths.pages, ["pages"]);
   gulp.watch(paths.statics, ["static"]);
-  
+
 });
