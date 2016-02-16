@@ -1,0 +1,12 @@
+/**
+ * utils/main.scss
+ *
+ * Imports all other util files
+ *
+ * Note: no sass/css should be written directly
+ * in this file, only imports.
+ *
+ */
+
+@import "../../assets/css/lib/shared-scss/utils/main";
+@import "colors";
