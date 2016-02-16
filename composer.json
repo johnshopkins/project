@@ -25,11 +25,4 @@
       "url": "git@github.com:johnshopkins/font-installer.git"
     }
   ],
-  "autoload": {
-    "psr-4": {
-      "super-project\\": [
-        "src/"
-      ]
-    }
-  }
 }
