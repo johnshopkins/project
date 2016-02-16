@@ -1,7 +1,7 @@
 /* global require: false */
 
 var log = require("./lib/log");
-var $ = require("./vendor/jquery");
+var $ = require("./shims/jquery");
 
 
 $(function () {
