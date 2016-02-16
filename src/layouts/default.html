@@ -5,7 +5,7 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><%= page.title || "Untitled Prototype" %></title>
-	<link rel="stylesheet" href="/assets/style.css" />
+	<link rel="stylesheet" href="/assets/base.css" />
 	<% if (page.customCss) { %>
 	<link rel="stylesheet" href="/assets/<%= page.customCss %>" />
 	<% } %>
@@ -13,10 +13,176 @@
 </head>
 <body>
 	<%= page.content %>
+
+
+
+
+
+	<div id="layout-debugger">
+
+	  <div id="column-master-super-awesome-grid">
+
+	    <div class="center force">
+
+	      <!-- <div class="row force"><div class="column twelve">twelve</div></div>
+
+	      <div class="row force"><div class="column eleven">eleven</div></div>
+
+	      <div class="row force"><div class="column ten">ten</div></div>
+
+	      <div class="row force"><div class="column nine">nine</div></div>
+
+	      <div class="row force"><div class="column eight">eight</div></div>
+
+	      <div class="row force"><div class="column seven">seven</div></div>
+
+	      <div class="row force">
+	        <div class="column six">six</div>
+	        <div class="column six">six</div>
+	      </div>
+
+	      <div class="row force"><div class="column five">five</div></div>
+
+	      <div class="row force">
+	        <div class="column four">four</div>
+	        <div class="column four">four</div>
+	        <div class="column four">four</div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column three">three</div>
+	        <div class="column three">three</div>
+	        <div class="column three">three</div>
+	        <div class="column three">three</div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	        <div class="column one">one</div>
+	      </div> -->
+
+	      <!-- <div class="row force"><div class="column twelve"></div></div>
+
+	      <div class="row force">
+	        <div class="column eleven"></div>
+	        <div class="column one"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column ten"></div>
+	        <div class="column two"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column nine"></div>
+	        <div class="column three"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column eight"></div>
+	        <div class="column four"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column seven"></div>
+	        <div class="column five"></div>
+	      </div> -->
+
+	      <div class="row force">
+	        <div class="column six"></div>
+	        <div class="column six"></div>
+	      </div>
+
+	      <!-- <div class="row force">
+	        <div class="column five"></div>
+	        <div class="column seven"></div>
+	      </div> -->
+
+	      <div class="row force">
+	        <div class="column four"></div>
+	        <div class="column four"></div>
+	        <div class="column four"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column three"></div>
+	        <div class="column three"></div>
+	        <div class="column three"></div>
+	        <div class="column three"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	        <div class="column two"></div>
+	      </div>
+
+	      <div class="row force">
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	        <div class="column one"></div>
+	      </div>
+
+	    </div>
+	  </div>
+
+	  <div id="width-breakpoint-totally-tubular-stripes">
+	    <div class="stripe hand"></div>
+	    <div class="stripe lap"></div>
+	    <div class="stripe desk"></div>
+	    <div class="stripe wall"></div>
+	    <div class="stripe jumbotron"></div>
+	  </div>
+
+	  <div id="height-breakpoint-totally-tubular-stripes">
+	    <div class="stripe hand"></div>
+	    <div class="stripe lap"></div>
+	    <div class="stripe desk"></div>
+	    <div class="stripe wall"></div>
+	    <div class="stripe jumbotron"></div>
+	  </div>
+
+	  <div id="breakpoint-checker"></div>
+
+	</div>
+
+
+
+
+
+
 	<script src="/assets/main.js"></script>
-	<% if (page.customJs) { %>
-	<script src="/assets/<%= page.customCss %>"></script>
-	<% } %>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--
     <script>
