@@ -1,3 +1,3 @@
-$fonts_dir: "/shared-fonts";
-$fa-font-path: "/shared-fonts/font-awesome"; // variable in font awesome scss
-@import "../../assets/css/lib/shared-scss/fonts/fonts";
+$fonts_dir: "/assets/fonts/lib/shared-fonts";
+$fa-font-path: "/assets/fonts/lib/shared-fonts/font-awesome"; // variable in font awesome scss
+@import "../lib/shared-scss/fonts/fonts";

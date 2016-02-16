@@ -1,0 +1,14 @@
+{
+    "name": "johnshopkins/shared-fonts",
+    "description": "Fonts that are shared across our projects.",
+    "type": "font-lib",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "git@github.com:johnshopkins/font-installer.git"
+      }
+    ],
+    "require": {
+      "johnshopkins/font-installer": "dev-master"
+    }
+}
