@@ -1,6 +1,7 @@
-node_modules
-public/*
-.sass-cache
+/node_modules
+/public/*
+/.sass-cache
 /src/assets/css/lib
 /src/assets/fonts/lib
 /vendor
+/build
