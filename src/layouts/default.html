@@ -5,11 +5,11 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><%= page.title || "Untitled Prototype" %></title>
-	<link rel="stylesheet" href="/assets/base.css" />
+	<link rel="stylesheet" href="/assets/css/base.css" />
 	<% if (page.customCss) { %>
-	<link rel="stylesheet" href="/assets/<%= page.customCss %>" />
+	<link rel="stylesheet" href="/assets/css/<%= page.customCss %>" />
 	<% } %>
-	<!-- <script src="/assets/js/vendor/modernizr.js"></script> -->
+	<script src="/assets/js/modernizr.js"></script>
 </head>
 <body>
 	<%= page.content %>
@@ -181,8 +181,8 @@
 
 
 
-
-	<script src="/assets/main.js"></script>
+	<script src="/assets/js/base.js"></script>
+	<script src="/assets/js/main.js"></script>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--
     <script>
