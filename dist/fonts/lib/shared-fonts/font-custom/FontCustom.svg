@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2015-4-20: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20150401 at Mon Apr 20 10:57:08 2015
+ By Eric Conrad
+Copyright (c) 2015, Eric Conrad
+</metadata>
+<defs>
+<font id="FontCustom" horiz-adv-x="512" >
+  <font-face 
+    font-family="FontCustom"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 512 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F101"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
+ />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" 
+d="M256 448c141.376 0 256 -114.624 256 -256s-114.624 -256 -256 -256s-256 114.624 -256 256s114.624 256 256 256zM332.384 74.9443h62.9443l-9.21582 234.111h-69.8564l-54.4961 -127.424c-2.6875 -6.91211 -4.60742 -13.4082 -5.75977 -17.6318
+c-1.15234 4.22363 -3.07227 10.7197 -5.75977 17.6318l-54.4961 127.424h-69.8564l-9.21582 -234.111h62.9443l3.07227 125.12v9.21582l54.5273 -134.336h37.6006l54.8799 134.336v-10.752z" />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" 
+d="M256 416c-123.52 0 -224 -100.48 -224 -224s100.48 -224 224 -224s224 100.48 224 224s-100.48 224 -224 224zM256 448v0c141.376 0 256 -114.624 256 -256s-114.624 -256 -256 -256s-256 114.624 -256 256s114.624 256 256 256zM153.92 254.176
+c18.8164 18.0479 37.6318 29.9521 61.4082 29.9521c27.2637 0 45.3115 -10.3682 52.96 -34.9121c24.5762 24.9277 43.3604 34.9121 66.4004 34.9121c38.3994 0 57.5674 -22.2715 57.5674 -71.0078v-113.216h-34.5596v104.768c0 32.2246 -5.37598 47.2002 -28.7686 47.2002
+c-16.8955 0 -34.5596 -10.3682 -55.2637 -31.8721v-120.128h-34.5605v104.8c0 32.2246 -6.14355 47.2002 -29.5352 47.2002c-18.4326 0 -37.6006 -11.9043 -55.2646 -31.8721v-120.128h-34.5596v181.184h34.5596z" />
+  </font>
+</defs></svg>
